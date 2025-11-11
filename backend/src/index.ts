@@ -57,11 +57,14 @@ process.on('SIGTERM', async () => {
   process.exit(0)
 })
 
-app.listen(PORT, () => {
-  console.log(`🚀 Server running on port ${PORT}`)
-  console.log(`📊 Health check: http://localhost:${PORT}/health`)
-  console.log(`📚 API docs: http://localhost:${PORT}/api`)
-})
+if (process.env.NODE_ENV !== 'test' && !process.env.VITEST) {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`)
+    console.log(`Health check: http://localhost:${PORT}/health`)
+    console.log(`API docs: http://localhost:${PORT}/api`)
+  })
+}
+
 
 export { prisma }
 export default app
