@@ -1,0 +1,324 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "📋 Task Manager" [level=1] [ref=e5]
+    - paragraph [ref=e6]: Sistema de gerenciamento de tarefas para disciplina de Teste de Software
+    - navigation [ref=e7]:
+      - link "Dashboard" [ref=e8] [cursor=pointer]:
+        - /url: /
+      - link "Usuários" [ref=e9] [cursor=pointer]:
+        - /url: /users
+      - link "Tarefas" [ref=e10] [cursor=pointer]:
+        - /url: /tasks
+      - link "Categorias" [ref=e11] [cursor=pointer]:
+        - /url: /categories
+  - main [ref=e12]:
+    - generic [ref=e14]:
+      - heading "Tarefas" [level=2] [ref=e15]
+      - button "Adicionar Tarefa" [active] [ref=e16] [cursor=pointer]
+      - generic [ref=e17]:
+        - generic [ref=e18]:
+          - generic [ref=e19]: "Título:"
+          - textbox [ref=e20]
+        - generic [ref=e21]:
+          - generic [ref=e22]: "Descrição:"
+          - textbox [ref=e23]
+        - generic [ref=e24]:
+          - generic [ref=e25]: "Status:"
+          - combobox [ref=e26]:
+            - option "Pendente" [selected]
+            - option "Em Progresso"
+            - option "Concluída"
+            - option "Cancelada"
+        - generic [ref=e27]:
+          - generic [ref=e28]: "Prioridade:"
+          - combobox [ref=e29]:
+            - option "Baixa"
+            - option "Média" [selected]
+            - option "Alta"
+            - option "Urgente"
+        - generic [ref=e30]:
+          - generic [ref=e31]: "Usuário:"
+          - combobox [ref=e32]:
+            - option "Selecione um usuário" [selected]
+            - option "Nome Atualizado E2E"
+            - option "Aluno Criado E2E"
+            - option "Nome Atualizado E2E"
+            - option "Aluno Criado E2E"
+            - option "Nome Atualizado E2E"
+            - option "Aluno Criado E2E"
+            - option "Nome Atualizado E2E"
+            - option "Aluno Criado E2E"
+            - option "Para Excluir"
+            - option "Nome Atualizado E2E"
+            - option "Aluno Criado E2E"
+            - option "Para Excluir"
+            - option "Para Excluir"
+            - option "Nome Atualizado E2E"
+            - option "Aluno Criado E2E"
+            - option "Para Excluir"
+            - option "Nome Atualizado E2E"
+            - option "Aluno Criado E2E"
+            - option "Nome Atualizado E2E"
+            - option "Aluno E2E"
+            - option "Aluno E2E"
+            - option "Jane Smith"
+            - option "Teste-editado"
+            - option "John Doe"
+        - generic [ref=e33]:
+          - generic [ref=e34]: "Categoria:"
+          - combobox [ref=e35]:
+            - option "Selecione uma categoria" [selected]
+            - option "Nome Atualizado E2E"
+            - option "Categoria Teste 1764291111193"
+            - option "Teste categoria editado"
+            - option "Study"
+            - option "Personal"
+            - option "Work"
+        - generic [ref=e36]:
+          - button "Criar" [ref=e37] [cursor=pointer]
+          - button "Cancelar" [ref=e38] [cursor=pointer]
+      - table [ref=e39]:
+        - rowgroup [ref=e40]:
+          - row "Título Status Prioridade Usuário Categoria Criado em Ações" [ref=e41]:
+            - columnheader "Título" [ref=e42]
+            - columnheader "Status" [ref=e43]
+            - columnheader "Prioridade" [ref=e44]
+            - columnheader "Usuário" [ref=e45]
+            - columnheader "Categoria" [ref=e46]
+            - columnheader "Criado em" [ref=e47]
+            - columnheader "Ações" [ref=e48]
+        - rowgroup [ref=e49]:
+          - row "Plan weekend trip COMPLETED LOW Jane Smith Personal 27/11/2025 Editar Excluir" [ref=e50]:
+            - cell "Plan weekend trip" [ref=e51]
+            - cell "COMPLETED" [ref=e52]
+            - cell "LOW" [ref=e53]
+            - cell "Jane Smith" [ref=e54]
+            - cell "Personal" [ref=e55]
+            - cell "27/11/2025" [ref=e56]
+            - cell "Editar Excluir" [ref=e57]:
+              - button "Editar" [ref=e58] [cursor=pointer]
+              - button "Excluir" [ref=e59] [cursor=pointer]
+          - row "Review team performance IN PROGRESS MEDIUM John Doe Work 27/11/2025 Editar Excluir" [ref=e60]:
+            - cell "Review team performance" [ref=e61]
+            - cell "IN PROGRESS" [ref=e62]
+            - cell "MEDIUM" [ref=e63]
+            - cell "John Doe" [ref=e64]
+            - cell "Work" [ref=e65]
+            - cell "27/11/2025" [ref=e66]
+            - cell "Editar Excluir" [ref=e67]:
+              - button "Editar" [ref=e68] [cursor=pointer]
+              - button "Excluir" [ref=e69] [cursor=pointer]
+          - row "Complete project proposal PENDING HIGH John Doe Work 27/11/2025 Editar Excluir" [ref=e70]:
+            - cell "Complete project proposal" [ref=e71]
+            - cell "PENDING" [ref=e72]
+            - cell "HIGH" [ref=e73]
+            - cell "John Doe" [ref=e74]
+            - cell "Work" [ref=e75]
+            - cell "27/11/2025" [ref=e76]
+            - cell "Editar Excluir" [ref=e77]:
+              - button "Editar" [ref=e78] [cursor=pointer]
+              - button "Excluir" [ref=e79] [cursor=pointer]
+          - row "Update resume PENDING HIGH John Doe Personal 27/11/2025 Editar Excluir" [ref=e80]:
+            - cell "Update resume" [ref=e81]
+            - cell "PENDING" [ref=e82]
+            - cell "HIGH" [ref=e83]
+            - cell "John Doe" [ref=e84]
+            - cell "Personal" [ref=e85]
+            - cell "27/11/2025" [ref=e86]
+            - cell "Editar Excluir" [ref=e87]:
+              - button "Editar" [ref=e88] [cursor=pointer]
+              - button "Excluir" [ref=e89] [cursor=pointer]
+          - row "Learn TypeScript PENDING MEDIUM Jane Smith Study 27/11/2025 Editar Excluir" [ref=e90]:
+            - cell "Learn TypeScript" [ref=e91]
+            - cell "PENDING" [ref=e92]
+            - cell "MEDIUM" [ref=e93]
+            - cell "Jane Smith" [ref=e94]
+            - cell "Study" [ref=e95]
+            - cell "27/11/2025" [ref=e96]
+            - cell "Editar Excluir" [ref=e97]:
+              - button "Editar" [ref=e98] [cursor=pointer]
+              - button "Excluir" [ref=e99] [cursor=pointer]
+          - row "Plan weekend trip COMPLETED LOW Jane Smith Personal 25/11/2025 Editar Excluir" [ref=e100]:
+            - cell "Plan weekend trip" [ref=e101]
+            - cell "COMPLETED" [ref=e102]
+            - cell "LOW" [ref=e103]
+            - cell "Jane Smith" [ref=e104]
+            - cell "Personal" [ref=e105]
+            - cell "25/11/2025" [ref=e106]
+            - cell "Editar Excluir" [ref=e107]:
+              - button "Editar" [ref=e108] [cursor=pointer]
+              - button "Excluir" [ref=e109] [cursor=pointer]
+          - row "Learn TypeScript PENDING MEDIUM Jane Smith Study 25/11/2025 Editar Excluir" [ref=e110]:
+            - cell "Learn TypeScript" [ref=e111]
+            - cell "PENDING" [ref=e112]
+            - cell "MEDIUM" [ref=e113]
+            - cell "Jane Smith" [ref=e114]
+            - cell "Study" [ref=e115]
+            - cell "25/11/2025" [ref=e116]
+            - cell "Editar Excluir" [ref=e117]:
+              - button "Editar" [ref=e118] [cursor=pointer]
+              - button "Excluir" [ref=e119] [cursor=pointer]
+          - row "Update resume PENDING HIGH John Doe Personal 25/11/2025 Editar Excluir" [ref=e120]:
+            - cell "Update resume" [ref=e121]
+            - cell "PENDING" [ref=e122]
+            - cell "HIGH" [ref=e123]
+            - cell "John Doe" [ref=e124]
+            - cell "Personal" [ref=e125]
+            - cell "25/11/2025" [ref=e126]
+            - cell "Editar Excluir" [ref=e127]:
+              - button "Editar" [ref=e128] [cursor=pointer]
+              - button "Excluir" [ref=e129] [cursor=pointer]
+          - row "Complete project proposal PENDING HIGH John Doe Work 25/11/2025 Editar Excluir" [ref=e130]:
+            - cell "Complete project proposal" [ref=e131]
+            - cell "PENDING" [ref=e132]
+            - cell "HIGH" [ref=e133]
+            - cell "John Doe" [ref=e134]
+            - cell "Work" [ref=e135]
+            - cell "25/11/2025" [ref=e136]
+            - cell "Editar Excluir" [ref=e137]:
+              - button "Editar" [ref=e138] [cursor=pointer]
+              - button "Excluir" [ref=e139] [cursor=pointer]
+          - row "Review team performance IN PROGRESS MEDIUM John Doe Work 25/11/2025 Editar Excluir" [ref=e140]:
+            - cell "Review team performance" [ref=e141]
+            - cell "IN PROGRESS" [ref=e142]
+            - cell "MEDIUM" [ref=e143]
+            - cell "John Doe" [ref=e144]
+            - cell "Work" [ref=e145]
+            - cell "25/11/2025" [ref=e146]
+            - cell "Editar Excluir" [ref=e147]:
+              - button "Editar" [ref=e148] [cursor=pointer]
+              - button "Excluir" [ref=e149] [cursor=pointer]
+          - row "Plan weekend trip COMPLETED LOW Jane Smith Personal 11/11/2025 Editar Excluir" [ref=e150]:
+            - cell "Plan weekend trip" [ref=e151]
+            - cell "COMPLETED" [ref=e152]
+            - cell "LOW" [ref=e153]
+            - cell "Jane Smith" [ref=e154]
+            - cell "Personal" [ref=e155]
+            - cell "11/11/2025" [ref=e156]
+            - cell "Editar Excluir" [ref=e157]:
+              - button "Editar" [ref=e158] [cursor=pointer]
+              - button "Excluir" [ref=e159] [cursor=pointer]
+          - row "Complete project proposal PENDING HIGH John Doe Work 11/11/2025 Editar Excluir" [ref=e160]:
+            - cell "Complete project proposal" [ref=e161]
+            - cell "PENDING" [ref=e162]
+            - cell "HIGH" [ref=e163]
+            - cell "John Doe" [ref=e164]
+            - cell "Work" [ref=e165]
+            - cell "11/11/2025" [ref=e166]
+            - cell "Editar Excluir" [ref=e167]:
+              - button "Editar" [ref=e168] [cursor=pointer]
+              - button "Excluir" [ref=e169] [cursor=pointer]
+          - row "Review team performance IN PROGRESS MEDIUM John Doe Work 11/11/2025 Editar Excluir" [ref=e170]:
+            - cell "Review team performance" [ref=e171]
+            - cell "IN PROGRESS" [ref=e172]
+            - cell "MEDIUM" [ref=e173]
+            - cell "John Doe" [ref=e174]
+            - cell "Work" [ref=e175]
+            - cell "11/11/2025" [ref=e176]
+            - cell "Editar Excluir" [ref=e177]:
+              - button "Editar" [ref=e178] [cursor=pointer]
+              - button "Excluir" [ref=e179] [cursor=pointer]
+          - row "Learn TypeScript PENDING MEDIUM Jane Smith Study 11/11/2025 Editar Excluir" [ref=e180]:
+            - cell "Learn TypeScript" [ref=e181]
+            - cell "PENDING" [ref=e182]
+            - cell "MEDIUM" [ref=e183]
+            - cell "Jane Smith" [ref=e184]
+            - cell "Study" [ref=e185]
+            - cell "11/11/2025" [ref=e186]
+            - cell "Editar Excluir" [ref=e187]:
+              - button "Editar" [ref=e188] [cursor=pointer]
+              - button "Excluir" [ref=e189] [cursor=pointer]
+          - row "Update resume PENDING HIGH John Doe Personal 11/11/2025 Editar Excluir" [ref=e190]:
+            - cell "Update resume" [ref=e191]
+            - cell "PENDING" [ref=e192]
+            - cell "HIGH" [ref=e193]
+            - cell "John Doe" [ref=e194]
+            - cell "Personal" [ref=e195]
+            - cell "11/11/2025" [ref=e196]
+            - cell "Editar Excluir" [ref=e197]:
+              - button "Editar" [ref=e198] [cursor=pointer]
+              - button "Excluir" [ref=e199] [cursor=pointer]
+          - row "Complete project proposal PENDING HIGH John Doe Work 11/11/2025 Editar Excluir" [ref=e200]:
+            - cell "Complete project proposal" [ref=e201]
+            - cell "PENDING" [ref=e202]
+            - cell "HIGH" [ref=e203]
+            - cell "John Doe" [ref=e204]
+            - cell "Work" [ref=e205]
+            - cell "11/11/2025" [ref=e206]
+            - cell "Editar Excluir" [ref=e207]:
+              - button "Editar" [ref=e208] [cursor=pointer]
+              - button "Excluir" [ref=e209] [cursor=pointer]
+          - row "Update resume PENDING HIGH John Doe Personal 11/11/2025 Editar Excluir" [ref=e210]:
+            - cell "Update resume" [ref=e211]
+            - cell "PENDING" [ref=e212]
+            - cell "HIGH" [ref=e213]
+            - cell "John Doe" [ref=e214]
+            - cell "Personal" [ref=e215]
+            - cell "11/11/2025" [ref=e216]
+            - cell "Editar Excluir" [ref=e217]:
+              - button "Editar" [ref=e218] [cursor=pointer]
+              - button "Excluir" [ref=e219] [cursor=pointer]
+          - row "Plan weekend trip COMPLETED LOW Jane Smith Personal 11/11/2025 Editar Excluir" [ref=e220]:
+            - cell "Plan weekend trip" [ref=e221]
+            - cell "COMPLETED" [ref=e222]
+            - cell "LOW" [ref=e223]
+            - cell "Jane Smith" [ref=e224]
+            - cell "Personal" [ref=e225]
+            - cell "11/11/2025" [ref=e226]
+            - cell "Editar Excluir" [ref=e227]:
+              - button "Editar" [ref=e228] [cursor=pointer]
+              - button "Excluir" [ref=e229] [cursor=pointer]
+          - row "Learn TypeScript PENDING MEDIUM Jane Smith Study 11/11/2025 Editar Excluir" [ref=e230]:
+            - cell "Learn TypeScript" [ref=e231]
+            - cell "PENDING" [ref=e232]
+            - cell "MEDIUM" [ref=e233]
+            - cell "Jane Smith" [ref=e234]
+            - cell "Study" [ref=e235]
+            - cell "11/11/2025" [ref=e236]
+            - cell "Editar Excluir" [ref=e237]:
+              - button "Editar" [ref=e238] [cursor=pointer]
+              - button "Excluir" [ref=e239] [cursor=pointer]
+          - row "Review team performance IN PROGRESS MEDIUM John Doe Work 11/11/2025 Editar Excluir" [ref=e240]:
+            - cell "Review team performance" [ref=e241]
+            - cell "IN PROGRESS" [ref=e242]
+            - cell "MEDIUM" [ref=e243]
+            - cell "John Doe" [ref=e244]
+            - cell "Work" [ref=e245]
+            - cell "11/11/2025" [ref=e246]
+            - cell "Editar Excluir" [ref=e247]:
+              - button "Editar" [ref=e248] [cursor=pointer]
+              - button "Excluir" [ref=e249] [cursor=pointer]
+          - row "Update resume PENDING HIGH John Doe Personal 28/10/2025 Editar Excluir" [ref=e250]:
+            - cell "Update resume" [ref=e251]
+            - cell "PENDING" [ref=e252]
+            - cell "HIGH" [ref=e253]
+            - cell "John Doe" [ref=e254]
+            - cell "Personal" [ref=e255]
+            - cell "28/10/2025" [ref=e256]
+            - cell "Editar Excluir" [ref=e257]:
+              - button "Editar" [ref=e258] [cursor=pointer]
+              - button "Excluir" [ref=e259] [cursor=pointer]
+          - row "Teste de edição de tarefa PENDING HIGH Teste-editado Study 28/10/2025 Editar Excluir" [ref=e260]:
+            - cell "Teste de edição de tarefa" [ref=e261]
+            - cell "PENDING" [ref=e262]
+            - cell "HIGH" [ref=e263]
+            - cell "Teste-editado" [ref=e264]
+            - cell "Study" [ref=e265]
+            - cell "28/10/2025" [ref=e266]
+            - cell "Editar Excluir" [ref=e267]:
+              - button "Editar" [ref=e268] [cursor=pointer]
+              - button "Excluir" [ref=e269] [cursor=pointer]
+          - row "Review team performance IN PROGRESS MEDIUM John Doe Work 28/10/2025 Editar Excluir" [ref=e270]:
+            - cell "Review team performance" [ref=e271]
+            - cell "IN PROGRESS" [ref=e272]
+            - cell "MEDIUM" [ref=e273]
+            - cell "John Doe" [ref=e274]
+            - cell "Work" [ref=e275]
+            - cell "28/10/2025" [ref=e276]
+            - cell "Editar Excluir" [ref=e277]:
+              - button "Editar" [ref=e278] [cursor=pointer]
+              - button "Excluir" [ref=e279] [cursor=pointer]
+```
